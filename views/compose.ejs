@@ -3,8 +3,19 @@
   <h1>Compose</h1>
 
 <form action="/compose" method="post">
-  <input type="text" name="newPost">
-  <button type="submit" name="button">Publish</button>
+  <div class="mb-3">
+    <label for="Post Title" class="form-label"> Title</label>
+    <br>
+      <input class="form-control" type="text"  name="postTitle">
+          </div>
+      <br>
+  <div class="mb-3">
+    <label for="Post Body" class="form-label"> Post</label>
+    <br>
+      <textarea class="form-control" name="postBody" rows="10" cols="80"></textarea>
+      <br>
+      </div>
+  <button type="submit" class='btn-primary' name="button">Publish</button>
 </form>
 
 
